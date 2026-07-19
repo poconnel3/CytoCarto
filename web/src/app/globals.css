@@ -47,6 +47,9 @@ h1, h2, h3, h4, p, dl, dd { margin: 0; }
 .header-tools { display: flex; align-items: center; gap: 24px; font-size: 15px; }
 .header-tools a { display: inline-flex; align-items: center; gap: 8px; color: var(--cobalt); }
 .header-tools a:hover { text-decoration: underline; }
+.header-tools .header-github-link { display: inline-grid; width: 38px; height: 38px; place-items: center; border: 2px solid var(--line-dark); border-radius: 8px; color: var(--forest-dark); background: #fff; }
+.header-tools .header-github-link:hover { border-color: var(--forest); color: var(--forest); text-decoration: none; }
+.header-tools .header-github-link:focus-visible { outline: 2px solid var(--forest); outline-offset: 2px; }
 .button { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; gap: 8px; border: 2px solid transparent; border-radius: 8px; padding: 0 15px; font-size: 14px; font-weight: 620; transition: border-color .15s ease, background .15s ease, color .15s ease; }
 .button-primary { background: var(--forest); color: #fff; }
 .button-primary:hover { background: var(--forest-dark); }
@@ -333,6 +336,7 @@ footer { display: flex; min-height: 38px; align-items: center; padding: 0 24px; 
   .brand-map > svg:first-child { width: 42px; height: 42px; }
   .brand-map-cell { top: 13px; left: 13px; width: 18px; height: 18px; }
   .header-tools a { display: none; }
+  .header-tools .header-github-link { display: inline-grid; width: 38px; height: 38px; }
   .report-button { min-height: 38px; padding: 0 10px; font-size: 13px; }
   .help-backdrop { align-items: end; padding: 10px; }
   .help-dialog { max-height: calc(100vh - 20px); padding: 18px; }

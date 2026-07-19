@@ -10,6 +10,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@primer/octicons-react": "^19.29.2",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.14.6",
     "cytoscape": "^3.34.0",
