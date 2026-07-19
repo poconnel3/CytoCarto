@@ -1,0 +1,138 @@
+{
+  "panel_id": "mayo_cypan",
+  "name": "Mayo CYPAN Cytokine Panel, Plasma",
+  "units": "pg/mL",
+  "donor_age_reference_year": 2024,
+  "stimulus_renames": {
+    "IL-18Ra": "IL-18"
+  },
+  "analytes": [
+    {
+      "id": "TNF",
+      "display_name": "TNF",
+      "aliases": ["TNF", "TNF-alpha", "tumor necrosis factor", "tumor necrosis factor alpha"],
+      "reference_upper_pg_ml": 10.0,
+      "stimulus": "TNF-alpha",
+      "gene_symbols": ["TNF"]
+    },
+    {
+      "id": "IL-6",
+      "display_name": "IL-6",
+      "aliases": ["IL-6", "IL6", "interleukin 6"],
+      "reference_upper_pg_ml": 5.0,
+      "stimulus": "IL-6",
+      "gene_symbols": ["IL6"]
+    },
+    {
+      "id": "IL-8",
+      "display_name": "IL-8",
+      "aliases": ["IL-8", "IL8", "CXCL8", "interleukin 8"],
+      "reference_upper_pg_ml": 3.0,
+      "stimulus": "IL-8",
+      "gene_symbols": ["CXCL8"],
+      "note": "Optional extended analyte; reference upper limit should be overridden for assay-specific panels when available."
+    },
+    {
+      "id": "IFN-beta",
+      "display_name": "IFN-beta",
+      "aliases": ["IFN-beta", "IFNB", "IFNB1", "interferon beta"],
+      "reference_upper_pg_ml": 20.0,
+      "stimulus": "IFN-beta",
+      "gene_symbols": ["IFNB1"]
+    },
+    {
+      "id": "IL-10",
+      "display_name": "IL-10",
+      "aliases": ["IL-10", "IL10", "interleukin 10"],
+      "reference_upper_pg_ml": 7.0,
+      "stimulus": "IL-10",
+      "gene_symbols": ["IL10"]
+    },
+    {
+      "id": "IL-5",
+      "display_name": "IL-5",
+      "aliases": ["IL-5", "IL5", "interleukin 5"],
+      "reference_upper_pg_ml": 2.1,
+      "stimulus": "IL-5",
+      "gene_symbols": ["IL5"],
+      "note": "Optional extended analyte; reference upper limit should be overridden for assay-specific panels when available."
+    },
+    {
+      "id": "IL-13",
+      "display_name": "IL-13",
+      "aliases": ["IL-13", "IL13", "interleukin 13"],
+      "reference_upper_pg_ml": 2.3,
+      "stimulus": "IL-13",
+      "gene_symbols": ["IL13"],
+      "note": "Optional extended analyte; reference upper limit should be overridden for assay-specific panels when available."
+    },
+    {
+      "id": "MCP-1",
+      "display_name": "MCP-1",
+      "aliases": ["MCP-1", "CCL2", "monocyte chemoattractant protein-1"],
+      "reference_upper_pg_ml": 198.0,
+      "stimulus": null,
+      "gene_symbols": ["CCL2"],
+      "note": "No direct Parse/DSPIN cytokine stimulus; used as a gene-network seed."
+    },
+    {
+      "id": "IL-1 beta",
+      "display_name": "IL-1 beta",
+      "aliases": ["IL-1 beta", "IL-1B", "IL1B", "IL-1-beta", "interleukin 1 beta"],
+      "reference_upper_pg_ml": 20.0,
+      "stimulus": "IL-1-beta",
+      "gene_symbols": ["IL1B"]
+    },
+    {
+      "id": "IFN-gamma",
+      "display_name": "IFN-gamma",
+      "aliases": ["IFN-gamma", "IFNG", "interferon gamma"],
+      "reference_upper_pg_ml": 60.0,
+      "stimulus": "IFN-gamma",
+      "gene_symbols": ["IFNG"]
+    },
+    {
+      "id": "MIP-1 alpha",
+      "display_name": "MIP-1 alpha",
+      "aliases": ["MIP-1 alpha", "MIP-1A", "CCL3", "macrophage inflammatory protein-1 alpha"],
+      "reference_upper_pg_ml": 220.0,
+      "stimulus": null,
+      "gene_symbols": ["CCL3"],
+      "note": "No direct Parse/DSPIN cytokine stimulus; used as a gene-network seed."
+    },
+    {
+      "id": "GM-CSF",
+      "display_name": "GM-CSF",
+      "aliases": ["GM-CSF", "CSF2", "granulocyte-monocyte colony stimulating factor"],
+      "reference_upper_pg_ml": 15.0,
+      "stimulus": "GM-CSF",
+      "gene_symbols": ["CSF2"]
+    },
+    {
+      "id": "sIL-2R alpha",
+      "display_name": "soluble IL-2R alpha",
+      "aliases": ["sIL-2R alpha", "soluble IL-2 receptor alpha", "IL-2 receptor alpha soluble", "CD25", "IL2RA"],
+      "reference_upper_pg_ml": 959.0,
+      "stimulus": null,
+      "gene_symbols": ["IL2RA"],
+      "note": "Soluble receptor analyte; used as a gene/program seed rather than a cytokine stimulus."
+    },
+    {
+      "id": "IFN-alpha",
+      "display_name": "IFN-alpha",
+      "aliases": ["IFN-alpha", "IFNA", "IFNA1", "interferon alpha"],
+      "reference_upper_pg_ml": 20.0,
+      "stimulus": "IFN-alpha1",
+      "gene_symbols": ["IFNA1"]
+    },
+    {
+      "id": "IL-18",
+      "display_name": "IL-18",
+      "aliases": ["IL-18", "IL18", "IL-18Ra", "interleukin 18"],
+      "reference_upper_pg_ml": 468.0,
+      "stimulus": "IL-18",
+      "gene_symbols": ["IL18", "IL18R1", "IL18RAP"],
+      "note": "Legacy DSPIN outputs may label this stimulus IL-18Ra; the interpreter normalizes that label to IL-18."
+    }
+  ]
+}

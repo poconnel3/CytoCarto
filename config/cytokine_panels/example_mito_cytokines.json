@@ -1,0 +1,116 @@
+{
+  "panel_id": "example_mito_cytokines",
+  "name": "Example MELAS clinical cytokine panel",
+  "units": "pg/mL",
+  "donor_age_reference_year": 2024,
+  "stimulus_renames": {
+    "IL-18Ra": "IL-18"
+  },
+  "analytes": [
+    {
+      "id": "TNF",
+      "display_name": "TNF-alpha",
+      "aliases": ["TNF", "TNF-alpha", "Tumor Necrosis Factor alpha", "Tumor Necrosis Factor - alpha"],
+      "reference_upper_pg_ml": 7.2,
+      "stimulus": "TNF-alpha",
+      "gene_symbols": ["TNF"]
+    },
+    {
+      "id": "IL-2",
+      "display_name": "IL-2",
+      "aliases": ["IL-2", "IL2", "Interleukin 2"],
+      "reference_upper_pg_ml": 2.1,
+      "stimulus": "IL-2",
+      "gene_symbols": ["IL2"]
+    },
+    {
+      "id": "sIL-2R alpha",
+      "display_name": "soluble IL-2 receptor",
+      "aliases": ["sIL-2R alpha", "soluble IL-2 receptor", "Interleukin 2 Receptor Soluble", "IL2RA", "CD25"],
+      "reference_upper_pg_ml": 858.2,
+      "stimulus": null,
+      "gene_symbols": ["IL2RA"],
+      "note": "Soluble receptor analyte; used as a gene/program seed rather than a cytokine stimulus."
+    },
+    {
+      "id": "IL-12",
+      "display_name": "IL-12",
+      "aliases": ["IL-12", "IL12", "Interleukin 12"],
+      "reference_upper_pg_ml": 1.9,
+      "stimulus": "IL-12",
+      "gene_symbols": ["IL12A", "IL12B"]
+    },
+    {
+      "id": "IFN-gamma",
+      "display_name": "IFN-gamma",
+      "aliases": ["IFN-gamma", "IFNG", "Interferon gamma"],
+      "reference_upper_pg_ml": 4.2,
+      "stimulus": "IFN-gamma",
+      "gene_symbols": ["IFNG"]
+    },
+    {
+      "id": "IL-4",
+      "display_name": "IL-4",
+      "aliases": ["IL-4", "IL4", "Interleukin 4"],
+      "reference_upper_pg_ml": 2.2,
+      "stimulus": "IL-4",
+      "gene_symbols": ["IL4"]
+    },
+    {
+      "id": "IL-5",
+      "display_name": "IL-5",
+      "aliases": ["IL-5", "IL5", "Interleukin 5"],
+      "reference_upper_pg_ml": 2.1,
+      "stimulus": "IL-5",
+      "gene_symbols": ["IL5"]
+    },
+    {
+      "id": "IL-10",
+      "display_name": "IL-10",
+      "aliases": ["IL-10", "IL10", "Interleukin 10"],
+      "reference_upper_pg_ml": 2.8,
+      "stimulus": "IL-10",
+      "gene_symbols": ["IL10"]
+    },
+    {
+      "id": "IL-13",
+      "display_name": "IL-13",
+      "aliases": ["IL-13", "IL13", "Interleukin 13"],
+      "reference_upper_pg_ml": 2.3,
+      "stimulus": "IL-13",
+      "gene_symbols": ["IL13"]
+    },
+    {
+      "id": "IL-17A",
+      "display_name": "IL-17",
+      "aliases": ["IL-17", "IL17", "IL-17A", "IL17A", "Interleukin 17"],
+      "reference_upper_pg_ml": 1.4,
+      "stimulus": "IL-17A",
+      "gene_symbols": ["IL17A"]
+    },
+    {
+      "id": "IL-1 beta",
+      "display_name": "IL-1 beta",
+      "aliases": ["IL-1 beta", "IL-1B", "IL1B", "Interleukin 1 beta"],
+      "reference_upper_pg_ml": 6.7,
+      "stimulus": "IL-1-beta",
+      "gene_symbols": ["IL1B"]
+    },
+    {
+      "id": "IL-6",
+      "display_name": "IL-6",
+      "aliases": ["IL-6", "IL6", "Interleukin 6"],
+      "reference_upper_pg_ml": 2.0,
+      "stimulus": "IL-6",
+      "gene_symbols": ["IL6"]
+    },
+    {
+      "id": "IL-8",
+      "display_name": "IL-8",
+      "aliases": ["IL-8", "IL8", "CXCL8", "Interleukin 8"],
+      "reference_upper_pg_ml": 3.0,
+      "stimulus": "IL-8",
+      "gene_symbols": ["CXCL8"]
+    }
+  ]
+}
