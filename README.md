@@ -1,6 +1,6 @@
 # CytoCarto
 
-![CytoCarto computational workflow](docs/assets/cytocarto_computational_abstract_final.svg)
+![CytoCarto computational workflow](docs/assets/cytocarto_computational_abstract_v2.svg)
 
 CytoCarto (Cytokine Cartography) projects a clinical cytokine panel into a fixed human PBMC D-SPIN reference atlas. It provides cytokine normalization, covariate-aware reference responses, signed program and gene-network projection, exact per-cell cell-type enrichment, human disease and mimic evidence retrieval, and human Perturb-Seqr mechanism evidence.
 
