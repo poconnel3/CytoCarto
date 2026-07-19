@@ -2,11 +2,11 @@
 
 import { ChangeEvent, Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import type { CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from "react";
+import { MarkGithubIcon } from "@primer/octicons-react";
 import {
   Check,
   CircleHelp,
   ClipboardPaste,
-  Code2,
   Dna,
   Download,
   FileText,
@@ -412,7 +412,7 @@ export function CytoCartoWorkbench() {
     </div>
     <div className="header-tools">
       {paperUrl ? <a href={paperUrl} target="_blank" rel="noreferrer"><FileText size={18} /> Paper</a> : null}
-      <a className="header-github-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label="View CytoCarto on GitHub" title="View CytoCarto on GitHub"><Code2 size={20} aria-hidden="true" /></a>
+      <a className="header-github-link" href={githubUrl} target="_blank" rel="noreferrer" aria-label="View CytoCarto on GitHub" title="View CytoCarto on GitHub"><MarkGithubIcon size={20} aria-hidden="true" /></a>
       <button className="icon-button help-button" onClick={() => setHelpOpen(true)} aria-label="How to interpret CytoCarto output" title="How to interpret CytoCarto output"><CircleHelp size={21} /></button>
       {result ? <button className="button button-secondary report-button" onClick={downloadBundle} disabled={isDownloading}>{isDownloading ? <LoaderCircle className="spin" size={18} /> : <Download size={18} />} {isDownloading ? "Preparing..." : "Download report"}</button> : null}
     </div>
