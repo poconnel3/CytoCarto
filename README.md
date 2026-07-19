@@ -22,39 +22,7 @@ The web application is available at [cytocarto.vercel.app](https://cytocarto.ver
 
 The large D-SPIN reference atlas, per-cell program matrix, cell metadata, public-evidence caches, clinical input files, and generated patient reports are intentionally not included in this repository.
 
-## Local development
-
-1. Place the required D-SPIN reference files in a local `global/` directory and set `DSPIN_GLOBAL_ROOT` to that directory. The interpreter requires the fixed D-SPIN program and gene networks, program representation, program and cell names, gene-to-program matrix, stimulus-response matrices, and aligned `cell_metadata.csv`.
-2. Provide the donor cytokine-dictionary workbook through `DSPIN_DONOR_WORKBOOK` when covariate-aware donor weighting is required.
-3. Install web dependencies:
-
-   ```bash
-   cd web
-   npm install
-   cd ..
-   ```
-
-4. Start the local API and frontend:
-
-   ```bash
-   ./scripts/run_cytocarto_local.sh
-   ```
-
-5. Open `http://localhost:3000`.
-
-## Tests
-
-```bash
-cd web
-npm test
-npm run lint
-npm run build
-```
-
-Python interpreter and evidence-layer tests are in `tests/`; API tests are in `web_api/test_app.py`.
 
 ## Data and privacy
 
 Raw pasted reports remain in the browser. The API receives normalized cytokine values and optional age, sex, race, and ethnicity. Do not submit names, medical-record numbers, dates of birth, or other direct identifiers.
-
-When using the optional remote Perturb-Seqr refresh path, CytoCarto requires explicit approval before transmitting a patient-derived signed gene list to a third-party public API. Static KG refreshes download public resources only and do not transmit patient data.
